@@ -21,7 +21,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - aiohttp
+    - aiohttp-retry
     - fsspec >=0.9.0
+    - multiformats
     - requests
 
 test:
