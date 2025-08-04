@@ -16,16 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - aiohttp
     - fsspec >=0.9.0
     - requests
 
 test:
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
